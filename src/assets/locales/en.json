@@ -1,0 +1,8 @@
+{
+  "form": {
+    "fullname": "FullName",
+    "fullnamePlaceholder": "Enter your name",
+    "submit": "Submit",
+    "required": "This field is required"
+  }
+}
