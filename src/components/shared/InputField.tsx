@@ -1,45 +1,53 @@
 import React from "react";
-import {useForm} from "react-hook-form";
+import {FieldValues, Path, useForm, UseFormRegister} from "react-hook-form";
 import Register from "../register/Register";
+import {Trans} from "react-i18next";
 
-interface IFormInput {
-    name: string
-    email: string
-    mobile: string
-    password: string
-    confirmpassword: string
-}
 
-interface InputFieldProps {
-    id: "text" | "email" | "password"
+interface InputFieldProps<T extends FieldValues> {
+    id: keyof T;
     label: string;
     type: string;
-    register: ReturnType<typeof useForm<IFormInput>>['register'];
+    register: UseFormRegister<T>;
     error?: string;
     placeholder?: string;
+    inputClassName?: string; // Optional prop for additional classes
+    labelClassName?: string; // Optional prop for additional classes
+
 }
 
-const InputField: React.FC<InputFieldProps> = React.memo(
-    ({id, label, type, register, error, placeholder}) => (
-        <div className = "mb-4" >
-        <label htmlFor = {id}
-className = "block text-sm font-medium text-gray-700" >
-    {label}
-    < /label>
-    < input
-{...
-    register(id)
-}
-type = {type}
-id = {id}
-className = "mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-placeholder = {placeholder}
-/>
-{
-    error && <p className = "mt-1 text-sm text-red-500" > {error} < /p>}
-        < /div>
-)
-)
-    ;
+const InputField =
+    <T extends FieldValues>({
+                                id,
+                                label,
+                                type,
+                                register,
+                                error,
+                                placeholder,
+                                inputClassName,
+                                labelClassName
+                            }: InputFieldProps<T>) => (
+        <div className="mb-4">
+            <label htmlFor={id as string}
+                   className={`block text-sm font-medium text-gray-700 ${labelClassName || " "}`}>
+                {label}
+            </label>
+            <input
+                {...
+                    register(id as Path<T>)
+                }
+                type={type}
+                id={id as string}
+                className={`mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 ${
+                    error ? "border-red-500 focus:ring-red-500 focus:border-red-500" : ""
+                } ${inputClassName || ""}`}
+                placeholder={placeholder}
+            />
+            {error && <p className="mt-1 text-sm text-red-500"> {error} </p>}
 
-    export default InputField;
+        </div>
+
+    )
+
+
+export default InputField;

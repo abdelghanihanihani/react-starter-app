@@ -2,7 +2,37 @@
   "form": {
     "fullname": "FullName",
     "fullnamePlaceholder": "Enter your name",
-    "submit": "Submit",
-    "required": "This field is required"
-  }
+    "email": "Email",
+    "date": "Date Of Birth",
+    "mobile": "Mobile",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "photo": "Photo",
+    "photoPlaceholder": "Upload Photo",
+    "gender": "Gender",
+    "genderPlaceholder": "Select your gender",
+    "genderMale": "Male",
+    "genderFemale": "Female",
+    "login": "Login",
+    "register": "Register",
+    "already_have_an_account": "Already have an account?",
+    "no_account": "Do you not have an account?",
+    "error": {
+      "fullnameRequired": "Full Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email",
+      "dateRequired": "Date of Birth is required",
+      "dateInvalid": "Invalid Date format. Use DD/MM/YYYY",
+      "mobileRequired": "Mobile is required",
+      "mobileInvalid": "Mobile number must start with +971 and be followed by 9 digits",
+      "passwordRequired": "Password is required",
+      "passwordInvalid": "Password must be at least 6 characters long",
+      "photoRequired": "Photo is required",
+      "photoLarge": "File is too large (max 2 MB)",
+      "photoInvalid": "Invalid file type. Only JPG, JPEG, PNG are allowed",
+      "genderRequired": "Gender is required"
+    }
+  },
+  "english": "English",
+  "contact": "Contact"
 }

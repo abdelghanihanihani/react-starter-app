@@ -2,7 +2,37 @@
   "form": {
     "fullname": "الاسم",
     "fullnamePlaceholder": "أدخل اسمك",
-    "submit": "إرسال",
-    "required": "هذا الحقل مطلوب"
-  }
+    "email": "البريد الإلكتروني",
+    "date": "تاريخ الميلاد",
+    "mobile": "الجوال",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "photo": "الصورة",
+    "photoPlaceholder": "اضافة صورة",
+    "gender": "الجنس",
+    "genderPlaceholder": "اختر جنسك",
+    "genderMale": "ذكر",
+    "genderFemale": "أنثى",
+    "register": "تسجيل",
+    "login": "تسجيل الدخول",
+    "already_have_an_account": "هل لديك حساب بالفعل؟",
+    "no_account": "ليس لديك حساب؟",
+    "error": {
+      "fullnameRequired": "الاسم الكامل مطلوب",
+      "emailRequired": "البريد الإلكتروني مطلوب",
+      "emailInvalid": "البريد الإلكتروني غير صالح",
+      "dateRequired": "تاريخ الميلاد مطلوب",
+      "dateInvalid": "تنسيق التاريخ غير صالح. استخدم DD/MM/YYYY",
+      "mobileRequired": "رقم الجوال مطلوب",
+      "mobileInvalid": "يجب أن يبدأ رقم الجوال بـ +971 ويتبعه 9 أرقام",
+      "passwordRequired": "كلمة المرور مطلوبة",
+      "passwordInvalid": "يجب أن تتكون كلمة المرور من 6 أحرف على الأقل",
+      "photoRequired": "الصورة مطلوبة",
+      "photoLarge": "الملف كبير جدًا (الحد الأقص  ",
+      "photoInvalid": "نوع الملف غير صالح. يُسمح فقط بملفات JPG وJPEG وPNG.",
+      "genderRequired": "الجنس مطلوب"
+    }
+  },
+  "arabic": "العربية",
+  "contact": "اتصل بنا"
 }
