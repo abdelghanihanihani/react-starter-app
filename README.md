@@ -30,7 +30,15 @@ A simple multilingual React application built with `create-react-app` that inclu
 
 ## 📸 Screenshots
 
-> Add screenshots here later to showcase the UI (especially in both languages)
+## Login Form (English/Arabic)
+<img width="589" alt="Screenshot 2025-06-04 at 11 29 44 AM" src="https://github.com/user-attachments/assets/ff5824de-afbb-49df-ac1d-5cb9f4e128a1" />
+<img width="555" alt="Screenshot 2025-06-04 at 11 34 35 AM" src="https://github.com/user-attachments/assets/b895c3b6-10c3-4b37-8e89-02f00dbd06cb" />
+
+
+## Register Form (English/Arabic)
+<img width="569" alt="Screenshot 2025-06-04 at 11 29 22 AM" src="https://github.com/user-attachments/assets/c0831ae4-97ad-4a0f-8545-0d68f54ca683" />
+<img width="478" alt="Screenshot 2025-06-04 at 11 35 39 AM" src="https://github.com/user-attachments/assets/43492f0b-4b4f-4c39-b315-89f977aac436" />
+
 
 ## 📦 Installation
 
